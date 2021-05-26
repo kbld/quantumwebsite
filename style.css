@@ -124,7 +124,7 @@ a {
 
 .imgmain {
     margin-top: 50px;
-    background-image: url("/img/googlesycamore.jpeg");
+    background-image: url("/googlesycamore.jpeg");
     width: 800px;
     height: 300px;
     border-radius: 20px;
@@ -293,7 +293,7 @@ a {
 }
 
 .children-box-atos {
-    background-image: url("/img/atos-logo.png");
+    background-image: url("/atos-logo.png");
     width: 200px;
     height: 100px;
     background-position: center;
@@ -305,7 +305,7 @@ a {
 }
 
 .children-box-microsoft {
-    background-image: url("/img/microsoft-logo.png");
+    background-image: url("/microsoft-logo.png");
     width: 200px;
     height: 100px;
     background-position: center;
@@ -317,7 +317,7 @@ a {
 }
 
 .children-box-ibm {
-    background-image: url("/img/ibm-logo.png");
+    background-image: url("/ibm-logo.png");
     width: 200px;
     height: 100px;
     background-position: center;
@@ -373,7 +373,7 @@ a {
 
 .img-sim-atos {
     margin-top: 50px;
-    background-image: url("/img/atos-qlm.jpeg");
+    background-image: url("/atos-qlm.jpeg");
     width: 100%;
     height: 450px;
     background-size: cover;

@@ -1,0 +1,461 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+.header-box {
+    background: rgba(24, 24, 24, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    width: 100%;
+    height: 60px;
+    top: 0;
+    position: fixed;
+    z-index: 9999;
+}
+
+.text-header {
+    color: #f5f5f7;
+    background-color: transparent;
+    margin-left: 30px;
+    float: left;
+    display: block;
+    margin-top: 15px;
+}
+
+.button-header {
+    background-color: #0071e3;
+    color: #f5f5f7;
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 5px 5px;
+    width: 230px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    margin-top: 15px;
+    margin-right: 30px;
+    -webkit-transition: 0.1s ease-out;
+    -moz-transition:  0.1s ease-out;
+    transition:  0.1s ease-out;
+}
+
+.button-header:hover {
+    background-color: #004e9c;
+    
+}
+
+
+.button-fixed {
+    background: rgba(0, 110, 255, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    color: #f5f5f7;
+    cursor: pointer;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.button-fixed:hover {
+    background: rgba(0, 88, 204, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-transition: 0.1s ease-out;
+    -moz-transition:  0.1s ease-out;
+    transition:  0.1s ease-out;
+}
+
+/* HEADER */
+
+/* BOX1 */
+
+
+.box1{
+    background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgba(0,0,0,1) 82%);
+    
+}
+
+
+.textmain {
+    text-align: center;
+    font-size: 52px;
+    font-weight: 600;
+    color: #f5f5f7;
+    padding-top: 100px;
+    animation: fade-in-hero 1.5s ease-out 0.7s 1 forwards;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.textsousmain {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #a1a1a6;
+    width: 700px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.imgmain {
+    margin-top: 50px;
+    background-image: url("/img/googlesycamore.jpeg");
+    width: 800px;
+    height: 300px;
+    border-radius: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.text-description {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #f5f5f7;
+    animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+@keyframes fade-in-hero {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* BOX1 */
+
+/* BOX2 */
+
+.cryptobox {
+    width: 500px;
+}
+
+.cryptotextmain {
+    text-align: left;
+    font-size: 52px;
+    font-weight: 600;
+    color: #f5f5f7;
+}
+
+.cryptotextsousmain {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #a1a1a6;
+    width: 700px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+/* BOX2 */
+
+/* BOX3 */
+
+.mother-box {
+    height: 400px;
+    width: 1000px;
+    margin-top: 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+
+}
+
+.children-box {
+    height: 400px;
+    width: 300px;
+    background: linear-gradient(to right top, #071931 0%, #33274f 50%, #661e43 100%);
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.children-box2 {
+    height: 400px;
+    width: 300px;
+    background: linear-gradient(rgba(0,0,0,0), #151b25, #151516),linear-gradient(
+        90deg
+        , #172538, #18263a 50%);
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.children-box3{
+    height: 400px;
+    width: 300px;
+    background: linear-gradient(to bottom, #203025 0%, #151516 100%);
+    border-radius: 20px;
+    position: relative;
+}
+
+
+
+.simumother-title {
+    width: 500px;
+}
+
+.simutextmain {
+    text-align: left;
+    font-size: 52px;
+    font-weight: 600;
+    color:#f5f5f7;
+}
+
+.plus-icon {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    fill: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.plus-icon:active{
+    transform: rotate(45deg);
+    -webkit-transition: 0.1s ease-out;
+    -moz-transition:  0.1s ease-out;
+    transition:  0.1s ease-out;
+}
+
+.simutextsousmain {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #a1a1a6;
+    width: 700px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.textboxtitle {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.text-name-simu{
+    color: #ffffff;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.children-box-atos {
+    background-image: url("/img/atos-logo.png");
+    width: 200px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.children-box-microsoft {
+    background-image: url("/img/microsoft-logo.png");
+    width: 200px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.children-box-ibm {
+    background-image: url("/img/ibm-logo.png");
+    width: 200px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+
+.textchildren {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 700px;
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+
+/* BOX3 */
+
+/* BOX4 */
+
+
+.box4 {
+    background-color: #151516;
+    padding-bottom: 120px;
+}
+
+.devtextmain {
+    text-align: left;
+    font-size: 52px;
+    font-weight: 600;
+    color:#f5f5f7;
+    padding-top: 50px ;
+    width: 1000px;
+    
+}
+
+.devtextsousmain {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #a1a1a6;
+    width: 700px;
+    margin-top: 30px;
+}
+
+.img-sim-atos {
+    margin-top: 50px;
+    background-image: url("/img/atos-qlm.jpeg");
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.link-download{
+    cursor: pointer;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.highlight-title {
+ color: #ffffff;
+ margin-top: 20px;
+}
+
+.highlight {
+    background: #eeffcc;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #a1a1a6;
+    margin-top: 20px;
+}
+
+/* BOX4 */
+
+/* BOX5 */
+
+/* BOX5 */
+
+
+
+
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-50px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  @keyframes animatebottom { 
+    from{ bottom:-50px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+
+
+
+
+
+  .sousbox{
+      margin-top: 50px;
+      width: 1000px;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 

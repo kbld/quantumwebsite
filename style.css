@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 a {
@@ -16,14 +16,15 @@ a {
 /* HEADER */
 
 .header-box {
-    background: rgba(24, 24, 24, 0.8);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255,255,255,0.72);
     width: 100%;
     height: 60px;
     top: 0;
     position: fixed;
     z-index: 9999;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .nav-box {
@@ -34,41 +35,38 @@ a {
 }
 
 .text-header {
-    color: #f5f5f7;
+    color: #1d1d1f;
     background-color: transparent;
     margin-left: 15px;
+    font-weight: 500;
+    font-size: 18px;
     float: left;
     display: block;
     margin-top: 15px;
 }
 
 .button-header {
-    background-color: #0071e3;
-    color: #f5f5f7;
+    color: #000000;
     font-size: 14px;
     border-radius: 50px;
-    padding: 5px 5px;
     width: 230px;
     height: 20px;
     text-align: center;
     cursor: pointer;
     float: right;
     position: relative;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-right: 15px;
 }
 
 .button-header:hover {
-    background-color: #004e9c;
+    color: #004da5;
 }
 
 .button-header-mobile {
     display: none;
 }
 
-.text-button-mobile {
-    display: none;
-}
 
 /* HEADER */
 
@@ -77,13 +75,13 @@ a {
 /* BOX1 Qu’est-ce qu’un Ordinateur Quantique ? */
 
 .box1 {
-    background: linear-gradient(180deg, rgba(34, 34, 34, 1) 0%, rgba(0, 0, 0, 1) 82%);
+    background: #ffffff;
     height: auto;
     width: 100%;
+    top: 0;
 }
 
 .sousbox {
-    margin-top: 50px;
     max-width: 1100px;
     height: auto;
     display: block;
@@ -93,10 +91,9 @@ a {
 
 .textmain {
     text-align: center;
-    font-size: 52px;
+    font-size: 56px;
     font-weight: 600;
-    color: #ffffff;
-    padding-top: 100px;
+    color: #1d1d1f;
     animation: fade-in-hero 1.5s ease-out 0.7s 1 forwards;
     transform: translateY(50px);
     opacity: 0;
@@ -104,21 +101,27 @@ a {
     display: block;
     margin-left: 30px;
     margin-right: 30px;
+    margin-top: 100px;
 }
+
+#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
 
 .textsousmain {
     text-align: center;
     font-size: 20px;
     font-weight: 400;
-    color: #a1a1a6;
+    color: #1d1d1f;
     margin-top: 30px;
     animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
     transform: translateY(50px);
     opacity: 0;
-    max-width: 1100px;
+    max-width: 600px;
     display: block;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .imgmain {
@@ -143,7 +146,7 @@ a {
     font-size: 16px;
     margin-top: 10px;
     font-weight: 300;
-    color: #f5f5f7;
+    color: #000000;
     animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
     transform: translateY(50px);
     opacity: 0;
@@ -151,12 +154,16 @@ a {
     margin-right: 30px;
 }
 
+.moretext1 {
+    display: none;
+}
+
+
 .button-more {
-    border: 2px solid #ffffff;
     border-radius: 50px;
     color: #ffffff;
-    background-color: transparent;
-    padding: 10px 20px;
+    background-color: #1d1d1f;
+    padding: 15px 10px;
     width: 200px;
     text-align: center;
     margin-top: 20px;
@@ -173,9 +180,8 @@ a {
 }
 
 .button-more:hover {
-    border: 2px solid #ffffff;
-    color: #000000;
-    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+    background-color: rgb(43, 43, 43);
 }
 
 @keyframes fade-in-hero {
@@ -189,76 +195,21 @@ a {
 
 /*---------------------------------------*/
 
-/* BOX2 Cryptographie Quantique */
+/* BOX2 Simulateur Quantique */
 
 .box2 {
-    width: 100%;
+    background: #f5f5f7;
     height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("img/background-crypto.jpeg");
-    padding-bottom: 100px;
-    background-color: #000;
+    width: 100%;
+    padding: 100px 0px;
+    margin-top: 50px;
 }
-
-.cryptotextmain {
-    text-align: left;
-    font-size: 52px;
-    font-weight: 600;
-    color: #ffffff;
-    padding-top: 100px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.cryptotextsousmain {
-    text-align: left;
-    font-size: 20px;
-    font-weight: 400;
-    color: #a1a1a6;
-    max-width: 1100px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.button-more-crypto {
-    border: 2px solid #ffffff;
-    border-radius: 50px;
-    width: 200px;
-    color: #ffffff;
-    background-color: transparent;
-    padding: 10px 20px;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    -webkit-transition: 0.1s ease-out;
-    -moz-transition: 0.1s ease-out;
-    transition: 0.1s ease-out;
-}
-
-.button-more-crypto:hover {
-    border: 2px solid #ffffff;
-    color: #000000;
-    background-color: rgb(255, 255, 255);
-}
-
-/* BOX2 Cryptographie Quantique */
-
-/*---------------------------------------*/
-
-/* BOX3 Simulateur Quantique */
 
 .simutextmain {
     text-align: left;
-    font-size: 52px;
-    font-weight: 600;
-    color: #ffffff;
+    font-size: 60px;
+    font-weight: 500;
+    color: #f63e54;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -266,8 +217,8 @@ a {
 .simutextsousmain {
     text-align: left;
     font-size: 20px;
-    font-weight: 400;
-    color: #a1a1a6;
+    font-weight: 500;
+    color: #1d1d1f;
     max-width: 1100px;
     display: block;
     margin-right: auto;
@@ -277,16 +228,16 @@ a {
     margin-right: 30px;
 }
 
+
+
 .img-sim-atos {
-    margin-top: 50px;
-    background-image: url("img/atos-qlm.jpeg");
-    width: auto;
-    height: 450px;
-    background-size: cover;
-    border-radius: 20px;
+    margin-top: 30px;
+    background-image: url("img/atos-ipad.png");
+    background-size: 70%;
+    background-position: center;
+    height: 590px;
     margin-right: auto;
     margin-left: auto;
-    background-position: center;
     background-repeat: no-repeat;
     margin-left: 30px;
     margin-right: 30px;
@@ -295,118 +246,110 @@ a {
 .text-description-simu {
     text-align: center;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: -50px;
     font-weight: 300;
-    color: #ffffff;
+    color: #1d1d1f;
 }
 
 .textboxtitle {
     text-align: left;
-    font-size: 20px;
-    font-weight: 400;
-    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    color: #f63e54;
     display: block;
     margin-right: 30px;
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .mother-box {
     /*All-Box*/
     height: 400px;
     max-width: 1100px;
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
-        margin-left: 30px;
+    margin-left: 30px;
     margin-right: 30px;
 }
 
 .children-box {
-    /*Atos*/
-    height: 400px;
-    width: 300px;
-    background: #1d1d1f;
-    border-radius: 30px;
-    position: relative;
+     /*Atos*/
+     height: 400px;
+     width: 300px;
+     background: #ffffff;
+     border-radius: 30px;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     z-index: 0;
+     box-sizing: border-box;
+     overflow: hidden;
+   
+
 }
 
-.children-box-atos {
-    background-image: url("img/atos-logo.png");
-    width: 200px;
-    height: 100px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-}
 
 .children-box2 {
     /*Microsoft*/
     height: 400px;
     width: 300px;
-    background: #1d1d1f;
+    background: #ffffff;
     border-radius: 30px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-.children-box-microsoft {
-    background-image: url("img/microsoft-logo.png");
-    width: 200px;
-    height: 100px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-}
 
 .children-box3 {
     /*IBM*/
     height: 400px;
     width: 300px;
-    background: #1d1d1f;
+    background: #ffffff;
     border-radius: 30px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .text-name-simu {
-    color: #ffffff;
+    color: #1d1d1f;
     font-size: 50px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     margin-top: 100px;
 }
-
-.children-box-ibm {
-    background-image: url("img/ibm-logo.png");
-    width: 200px;
-    height: 100px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+.text-intro-simu {
+    color: #f63e54;
+    font-size: 22px;
+    font-weight: 500;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .plus-icon {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    fill: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+    fill: rgb(255, 255, 255);
+    background-color: rgba(134,134,139,.92);
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 0px;
 }
 
 .plus-icon:active {
@@ -428,41 +371,14 @@ a {
     margin-top: 30px;
 }
 
-
-
-/* BOX3 Simulateur Quantique */
+/* BOX2 Simulateur Quantique */
 
 /*---------------------------------------*/
 
-/* BOX4 Algorithme de Shor*/
+/* BOX3 Cryptographie Quantique */
 
-.algotextmain {
-    text-align: left;
-    font-size: 52px;
-    font-weight: 600;
-    color: #ffffff;
-}
 
-.algotextsousmain {
-    text-align: left;
-    font-size: 20px;
-    font-weight: 400;
-    color: #ffffff;
-    width: auto;
-    margin-top: 30px;
-}
-
-.algobox {
-    background: linear-gradient(-135deg, #c6368a 0%, #673dc2 100%);
-    border-radius: 30px;
-    height: auto;
-    padding: 50px 50px;
-    z-index: 9999;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.algomainbox {
+.box3 {
     margin-top: 50px;
     max-width: 1100px;
     height: auto;
@@ -471,20 +387,26 @@ a {
     margin-right: auto;
 }
 
-/* BOX4 Algorithme de Shor*/
+.box3sousbox {
+    border-radius: 30px;
+    height: auto;
+    padding: 70px 70px;
+    z-index: 9999;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/background-crypto.jpeg");
+}
 
-/*---------------------------------------*/
-
-/* BOX4 Algorithme de Groven*/
-
-.algo2textmain {
+.cryptotextmain {
     text-align: left;
     font-size: 52px;
     font-weight: 600;
     color: #ffffff;
 }
 
-.algo2textsousmain {
+.cryptotextsousmain {
     text-align: left;
     font-size: 20px;
     font-weight: 400;
@@ -493,57 +415,55 @@ a {
     margin-top: 30px;
 }
 
-.algo2box {
-    background: linear-gradient(-135deg, #c6368a 0%, #673dc2 100%);
-    background: -webkit-linear-gradient( 300deg, #359cd7 10%, #7d6efb 100%);
-    border-radius: 30px;
-    height: auto;
-    padding: 50px 50px;
-    z-index: 9999;
-    margin-left: 30px;
-    margin-right: 30px;
-}
 
-.algo2sousbox {
-    margin-top: 50px;
-    max-width: 1100px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.button-more-box {
+.button-more-crypto {
     border: 2px solid #ffffff;
     border-radius: 50px;
-    width: 200px;
     color: #ffffff;
     background-color: transparent;
     padding: 10px 20px;
+    width: 200px;
     text-align: center;
-    margin-top: 180px;
+    margin-top: 130px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-    -webkit-transition: 0.1s ease-out;
-    -moz-transition: 0.1s ease-out;
-    transition: 0.1s ease-out;
 }
 
-.button-more-box:hover {
+.button-more-crypto:hover {
     border: 2px solid #ffffff;
     color: #000000;
     background-color: rgb(255, 255, 255);
 }
 
-/* BOX4 Algorithme de Shor*/
+/* BOX3 Cryptographie Quantique */
 
 /*---------------------------------------*/
 
-/* BOX5 Internet Quantique*/
+/* BOX4 Internet Quantique*/
 
-.intertextmain {
+.box4 {
+    margin-top: 50px;
+    max-width: 1100px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box4sousbox {
+    border-radius: 30px;
+    height: auto;
+    padding: 70px 70px;
+    z-index: 9999;
+    margin-left: 30px;
+    margin-right: 30px;
+    background: -webkit-linear-gradient(300deg, #359cd7 10%, #7d6efb 100%);
+    background: linear-gradient(150deg, #359cd7 10%, #7d6efb 100%);
+}
+
+.internettextmain {
     text-align: left;
     font-size: 52px;
     font-weight: 600;
@@ -559,17 +479,13 @@ a {
     margin-top: 30px;
 }
 
-.interbox {
-    background: #1d1d1f;
-    border-radius: 30px;
-    height: auto;
-    padding: 50px 50px;
-    z-index: 9999;
-    margin-left: 30px;
-    margin-right: 30px;
-}
+/* BOX4 Internet Quantique*/
 
-.intersousbox {
+/*---------------------------------------*/
+
+/* BOX5 Algorithme*/
+
+.box5 {
     margin-top: 50px;
     max-width: 1100px;
     height: auto;
@@ -578,15 +494,90 @@ a {
     margin-right: auto;
 }
 
-/* BOX5 Internet Quantique*/
+.box5sousbox {
+    background: linear-gradient(-135deg, #c6368a 0%, #673dc2 100%);
+    border-radius: 30px;
+    height: auto;
+    padding: 70px 70px;
+    z-index: 9999;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.algotextmain {
+    text-align: left;
+    font-size: 52px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.algosoustitlemain {
+    text-align: left;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.algotextsousmain {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    width: auto;
+    margin-top: 20px;
+}
+
+
+
+
+.button-more-box {
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    width: 200px;
+    color: #ffffff;
+    background-color: transparent;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    -webkit-transition: 0.1s ease-out;
+    -moz-transition: 0.1s ease-out;
+    transition: 0.1s ease-out;
+}
+
+.button-more-box:hover {
+    border: 2px solid #ffffff;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+/* BOX5 Algorithme*/
 
 /*---------------------------------------*/
 
 /* BOX6 Quel sont les étapes pour installez myQLM ?*/
 
-.box4 {
-    background-color: #151516;
-    padding-bottom: 120px;
+.box6 {
+    margin-top: 50px;
+    max-width: 1100px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box6sousbox {
+    border-radius: 30px;
+    height: auto;
+    padding: 70px 70px;
+    z-index: 9999;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #1d1d1f;
 }
 
 .devtextmain {
@@ -594,10 +585,7 @@ a {
     font-size: 52px;
     font-weight: 600;
     color: #ffffff;
-    padding-top: 50px;
     max-width: 1100px;
-    margin-left: 30px;
-    margin-right: 30px;
 }
 
 .devtextsousmain {
@@ -607,15 +595,17 @@ a {
     color: #a1a1a6;
     max-width: 1100px;
     margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+}
+
+.highlight-title-step {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 25px;
 }
 
 .highlight-title {
     color: #ffffff;
     margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
 }
 
 .highlight {
@@ -629,11 +619,7 @@ a {
     line-height: 50px;
     border: 1px solid #a1a1a6;
     margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
 }
-
-
 
 /* BOX6 Quel sont les étapes pour installez myQLM ?*/
 
@@ -641,34 +627,64 @@ a {
 
 /* BOX7 Mise en pratique */
 
+.box7 {
+    margin-top: 50px;
+    max-width: 1100px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .test-box {
-    background: -webkit-linear-gradient(300deg, #359cd7 10%, #7d6efb 100%);
-    background: linear-gradient(150deg, #359cd7 10%, #7d6efb 100%);
+    background: #f5f5f5;
     width: auto;
     margin-top: 20px;
     height: 500px;
     display: block;
     border-radius: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     margin-left: 30px;
     margin-right: 30px;
 }
 
+.text-update {
+    text-align: center;
+    color: #1d1d1f;
+    padding-top: 220px;
+    font-size: 30px;
+}
+
 /* BOX7 Mise en pratique */
 
-/*--------------------------------------498645926974895265289-*/
+/*---------------------------------------*/
 
-@media only screen and (max-width: 733px) {
-    .button-header {
-        width: 50px;
-        height: 20px;
-    }
+/* FOOTER */
+
+.footer-box {
+    background-color: #f5f5f5;
+    bottom: 0;
+    height: 60px;
+}
+
+.footer-title {
+    color: #1d1d1f;
+    text-align: center;
+    line-height: 60px;
+    font-size: 15px;
+}
+
+/* FOOTER */
+
+/*---------------------------------------*/
+
+@media only screen and (max-width: 737px) {
     .button-header {
         display: none;
     }
     .button-header-mobile {
-        background-color: #0071e3;
-        color: #f5f5f7;
+        background-color: #000000;
+        color: #ffffff;
         font-size: 13px;
         border-radius: 50px;
         padding: 5px 5px;
@@ -683,596 +699,77 @@ a {
         display: block;
     }
     .button-header-mobile:hover {
-        background-color: #004e9c;
+        background-color: #424242;
+    }
+    .text-header {
+        margin-top: 17px;
+        font-size: 15px;
     }
 
-    .mother-box {
-        display: block;
+    .textmain, .cryptotextmain, .simutextmain, .algotextmain, .algo2textmain, .devtextmain,  .intertextmain{
+        font-size: 45px;
     }
-    
-    .children-box {
-        width: auto;
-        position: absolute;
+    .textsousmain, .cryptotextsousmain, .simutextsousmain, .devtextsousmain, .algo2textsousmain, .intertextsousmain, .algotextsousmain {
+        font-size: 18px;
     }
 
-    
-    .children-box2 {
-        position: absolute;
-    }
-
-    
-    .children-box3 {
-        position: absolute;
-    }
-
-    /* HEADER */
-
-.header-box {
-    background: rgba(24, 24, 24, 0.8);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-    width: 100%;
-    height: 60px;
-    top: 0;
-    position: fixed;
-    z-index: 9999;
-}
-
-.nav-box {
-    max-width: 1160px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.text-header {
-    color: #ffffff;
-    margin-left: 15px;
-    float: left;
-    display: block;
-    margin-top: 17px;
-    font-size: 15px;
-}
-
-
-
-
-
-.text-button-mobile {
-    display: none;
-}
-
-/* HEADER */
-
-/*---------------------------------------*/
-
-/* BOX1 Qu’est-ce qu’un Ordinateur Quantique ? */
-
-.box1 {
-    background: linear-gradient(180deg, rgba(34, 34, 34, 1) 0%, rgba(0, 0, 0, 1) 82%);
-    height: auto;
-    width: 100%;
-}
-
-.sousbox {
-    margin-top: 50px;
-    max-width: 1100px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.textmain {
-    text-align: center;
-    font-size: 45px;
-    font-weight: 600;
-    color: #ffffff;
-    padding-top: 100px;
-    animation: fade-in-hero 1.5s ease-out 0.7s 1 forwards;
-    transform: translateY(50px);
-    opacity: 0;
-    max-width: 1100px;
-    display: block;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.textsousmain {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    color: #a1a1a6;
-    margin-top: 30px;
-    animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
-    transform: translateY(50px);
-    opacity: 0;
-    max-width: 1100px;
-    display: block;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.imgmain {
-    margin-top: 50px;
-    background-image: url("img/googlesycamore.jpeg");
-    max-width: 1100px;
-    height: 500px;
-    border-radius: 30px;
-    display: block;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
-    transform: translateY(50px);
-    opacity: 0;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.text-description {
-    text-align: center;
-    font-size: 16px;
-    margin-top: 10px;
-    font-weight: 300;
-    color: #f5f5f7;
-    animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
-    transform: translateY(50px);
-    opacity: 0;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.button-more {
-    border: 2px solid #ffffff;
-    border-radius: 50px;
-    color: #ffffff;
-    background-color: transparent;
-    padding: 10px 20px;
-    width: 200px;
-    text-align: center;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    -webkit-transition: 0.1s ease-out;
-    -moz-transition: 0.1s ease-out;
-    transition: 0.1s ease-out;
-    animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
-    transform: translateY(50px);
-    opacity: 0;
-}
-
-.button-more:hover {
-    border: 2px solid #ffffff;
-    color: #000000;
-    background-color: rgb(255, 255, 255);
-}
-
-@keyframes fade-in-hero {
-    100% {
-        transform: translateY(0);
-        opacity: 1;
+    .button-more-crypto {
+        margin-top: 100px;
     }
 }
 
-/* BOX1 Qu’est-ce qu’un Ordinateur Quantique ?*/
-
-/*---------------------------------------*/
-
-/* BOX2 Cryptographie Quantique */
-
-.box2 {
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("img/background-crypto.jpeg");
-    padding-bottom: 100px;
-    background-color: #000;
-}
-
-.cryptotextmain {
-    text-align: left;
-    font-size: 45px;
-    font-weight: 600;
-    color: #ffffff;
-    padding-top: 100px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.cryptotextsousmain {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 400;
-    color: #a1a1a6;
-    max-width: 1100px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.button-more-crypto {
-    border: 2px solid #ffffff;
-    border-radius: 50px;
-    width: 200px;
-    color: #ffffff;
-    background-color: transparent;
-    padding: 10px 20px;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    -webkit-transition: 0.1s ease-out;
-    -moz-transition: 0.1s ease-out;
-    transition: 0.1s ease-out;
-}
-
-.button-more-crypto:hover {
-    border: 2px solid #ffffff;
-    color: #000000;
-    background-color: rgb(255, 255, 255);
-}
-
-/* BOX2 Cryptographie Quantique */
-
-/*---------------------------------------*/
-
-/* BOX3 Simulateur Quantique */
-
-.simutextmain {
-    text-align: left;
-    font-size: 45px;
-    font-weight: 600;
-    color: #ffffff;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.simutextsousmain {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 400;
-    color: #a1a1a6;
-    max-width: 1100px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.img-sim-atos {
-    margin-top: 50px;
-    background-image: url("img/atos-qlm.jpeg");
-    width: auto;
-    height: 450px;
-    background-size: cover;
-    border-radius: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.text-description-simu {
-    text-align: center;
-    font-size: 16px;
-    margin-top: 10px;
-    font-weight: 300;
-    color: #ffffff;
-}
+@media only screen and (max-width: 1000px) {
 
 .textboxtitle {
-    text-align: left;
-    font-size: 20px;
-    font-weight: 400;
-    color: #ffffff;
-    display: block;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-top: 30px;
+    text-align: center;
+    margin-top: 60px;
 }
 
+.mother-box {
+    /*All-Box*/
+    height: auto;
+    max-width: 1100px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
+.children-box {
+    width: auto;
+    position: relative;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
+}
 
+.children-box2 {
+    width: auto;
+    position: relative;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.children-box3 {
+    width: auto;
+    position: relative;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
 
 /* BOX3 Simulateur Quantique */
-
-/*---------------------------------------*/
-
-/* BOX4 Algorithme de Shor*/
-
-.algotextmain {
-    text-align: left;
-    font-size: 45px;
-    font-weight: 600;
-    color: #ffffff;
+ 
 }
 
-.algotextsousmain {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 400;
-    color: #ffffff;
-    width: auto;
-    margin-top: 30px;
-}
-
-.algobox {
-    background: linear-gradient(-135deg, #c6368a 0%, #673dc2 100%);
-    border-radius: 30px;
-    height: auto;
-    padding: 50px 50px;
-    z-index: 9999;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.algomainbox {
-    margin-top: 50px;
-    max-width: 1100px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* BOX4 Algorithme de Shor*/
-
-/*---------------------------------------*/
-
-/* BOX4 Algorithme de Groven*/
-
-.algo2textmain {
-    text-align: left;
-    font-size: 45px;
-    font-weight: 600;
-    color: #ffffff;
-}
-
-.algo2textsousmain {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 400;
-    color: #ffffff;
-    width: auto;
-    margin-top: 30px;
-}
-
-.algo2box {
-    background: linear-gradient(-135deg, #c6368a 0%, #673dc2 100%);
-    background: -webkit-linear-gradient( 300deg, #359cd7 10%, #7d6efb 100%);
-    border-radius: 30px;
-    height: auto;
-    padding: 50px 50px;
-    z-index: 9999;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.algo2sousbox {
-    margin-top: 50px;
-    max-width: 1100px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.button-more-box {
-    border: 2px solid #ffffff;
-    border-radius: 50px;
-    width: 200px;
-    color: #ffffff;
-    background-color: transparent;
-    padding: 10px 20px;
-    text-align: center;
-    margin-top: 180px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    -webkit-transition: 0.1s ease-out;
-    -moz-transition: 0.1s ease-out;
-    transition: 0.1s ease-out;
-}
-
-.button-more-box:hover {
-    border: 2px solid #ffffff;
-    color: #000000;
-    background-color: rgb(255, 255, 255);
-}
-
-/* BOX4 Algorithme de Shor*/
-
-/*---------------------------------------*/
-
-/* BOX5 Internet Quantique*/
-
-.intertextmain {
-    text-align: left;
-    font-size: 45px;
-    font-weight: 600;
-    color: #ffffff;
-}
-
-.intertextsousmain {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 400;
-    color: #ffffff;
-    width: auto;
-    margin-top: 30px;
-}
-
-.interbox {
-    background: #1d1d1f;
-    border-radius: 30px;
-    height: auto;
-    padding: 50px 50px;
-    z-index: 9999;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.intersousbox {
-    margin-top: 50px;
-    max-width: 1100px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* BOX5 Internet Quantique*/
-
-/*---------------------------------------*/
-
-/* BOX6 Quel sont les étapes pour installez myQLM ?*/
-
-.box4 {
-    background-color: #151516;
-    padding-bottom: 120px;
-}
-
-.devtextmain {
-    text-align: left;
-    font-size: 45px;
-    font-weight: 600;
-    color: #ffffff;
-    padding-top: 50px;
-    max-width: 1100px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.devtextsousmain {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 400;
-    color: #a1a1a6;
-    max-width: 1100px;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.highlight-title {
-    color: #ffffff;
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.highlight {
-    background: #eeffcc;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10px;
-    height: 50px;
-    max-width: 500px;
-    line-height: 50px;
-    border: 1px solid #a1a1a6;
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-
-
-/* BOX6 Quel sont les étapes pour installez myQLM ?*/
-
-/*---------------------------------------*/
-
-/* BOX7 Mise en pratique */
-
-.test-box {
-    background: -webkit-linear-gradient(300deg, #359cd7 10%, #7d6efb 100%);
-    background: linear-gradient(150deg, #359cd7 10%, #7d6efb 100%);
-    width: auto;
-    margin-top: 20px;
-    height: 500px;
-    display: block;
-    border-radius: 30px;
-    margin-bottom: 200px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-/* BOX7 Mise en pratique */
-
-/*---------------------------------------*/
-
-
-    /*.algo2box {
-        min-height: 546px;
-    }
-
-    
-
-    .textmain {
-        text-align: center;
-        font-size: 40px;
-        font-weight: 600;
-        color: rgb(255, 255, 255);
-        padding-top: 100px;
-    }
-    
-    .textsousmain {
-        text-align: center;
-        font-size: 20px;
-        font-weight: 400;
-        color: #a1a1a6;
-        width: 700px;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 30px;
-    }
-
-    .imgmain {
-        margin-top: 50px;
-        background-image: url(googlesycamore.jpeg);
-        width: 200px;
-        background-size: cover;
-
-    }
-    
-*/
-}
-
-.text-update{
-    text-align: center;
-    color: #fff;
-    padding-top: 220px;
-    font-size: 30px;
-}
-
-
-.footer-box{
-    background-color: #151516;
-    bottom: 0;
-    height: 60px;
-}
-
-.footer-title{
-    color: #ffffff;
-    text-align: center;
-    line-height: 60px;
-    font-size: 15px;
-}

@@ -6,5 +6,6 @@
         "markdown",
         "latex",
         "plaintext"
-    ]
+    ],
+    "python.pythonPath": "/Users/killian/opt/anaconda3/envs/python38/bin/python"
 }

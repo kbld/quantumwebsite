@@ -9,13 +9,12 @@ function sizechildren() {
   
 };
 
-
-
 function sizechildren32() {
     document.getElementById('text-name-simu').style.display = "none";
     document.getElementById('children-box-ibm').style.display = "none";
   
 };
+
 
 function sizechildren2() {
 	document.getElementById('children-box2').style.width = "100%";
@@ -24,15 +23,31 @@ function sizechildren2() {
     document.getElementById('children-box3').style.display = "none";
     document.getElementById('text-name-simu').style.display = "none";
     document.getElementById('children-box-microsoft').style.display = "none";
+    
+
+
+    
 };
+
+
+
+
+
+
+
+
+
+
+
 
 function sizechildren3() {
 	document.getElementById('children-box3').style.width = "100%";
-    document.getElementById('textchildren3').style.display = "block";
     document.getElementById('children-box').style.display = "none";
     document.getElementById('children-box2').style.display = "none";
     document.getElementById('text-name-simu').style.display = "none";
     document.getElementById('children-box-ibm').style.display = "none";
+    document.getElementById('text-name-simu').style.visibility = "none";
+ 
 };
 
 
@@ -42,9 +57,6 @@ function moretext1() {
 
     
 }
-
-
-
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
@@ -134,4 +146,10 @@ function myFunction() {
   }
 
 
+
+
+
+
+
+  
 

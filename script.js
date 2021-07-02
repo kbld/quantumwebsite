@@ -67,14 +67,14 @@ const sr = ScrollReveal({
 
 });
 
-sr.reveal('.children-box',{delay: 100}); 
-sr.reveal('.children-box2',{delay: 400}); 
-sr.reveal('.children-box3',{delay: 600}); 
+sr.reveal('.children-box',{delay: 100, reset: false}); 
+sr.reveal('.children-box2',{delay: 400, reset: false}); 
+sr.reveal('.children-box3',{delay: 600, reset: false}); 
 
-sr.reveal('.box3sousbox',{delay: 200}); 
-sr.reveal('.box4sousbox',{delay: 200}); 
-sr.reveal('.box5sousbox',{delay: 200}); 
-sr.reveal('.box6sousbox',{delay: 200}); 
+sr.reveal('.box3sousbox',{delay: 200, reset: false}); 
+sr.reveal('.box4sousbox',{delay: 200, reset: false}); 
+sr.reveal('.box5sousbox',{delay: 200, reset: false}); 
+sr.reveal('.box6sousbox',{delay: 200, reset: false}); 
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 

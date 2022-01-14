@@ -1,77 +1,122 @@
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
 }
 
-a {
-    text-decoration: none;
-    cursor: pointer;
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
 }
 
 /* HEADER */
 
-.header-box {
-    background-color: rgba(255,255,255);
-    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 15%);
-    width: 100%;
-    height: 60px;
-    top: 0;
+.navbar {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
     position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     z-index: 9999;
-}
+  }
+  
+  .box-navbar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 20px;
+  }
 
 .nav-box {
-    max-width: 1160px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 1160px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }
 
+
+
+
 .text-header {
-    color: #1d1d1f;
-    background-color: transparent;
-    margin-left: 15px;
-    font-weight: 500;
-    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
     float: left;
-    display: block;
-    margin-top: 15px;
+    font-size: 19px;
 }
 
 .button-header {
-    background-color: #1d1d1f;
-    color: #ffffff;
-    font-size: 13px;
-    border-radius: 50px;
-    padding: 10px 5px;
-    width: 240px;
-    height: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
     text-align: center;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #000000;
     float: right;
-    position: relative;
-    margin-top: 10px;
-    margin-right: 15px;
-    display: block;
-    -webkit-transition: 0.1s ease-out;
-    -moz-transition: 0.1s ease-out;
-    transition: 0.1s ease-out;
+    font-size: 15px;
+}
+
+.txt-button-link-box {
+  color: #1d1d1f;
+  font-weight: 500;
+  font-size: 18px;
+  float: left;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 .button-header:hover {
-    background-color: #3f3f3f;
-    color: #ffffff;
+  background-color: #3f3f3f;
+  color: #ffffff;
+  transition: 0.5s;
 }
 
 .button-header-mobile {
-    display: none;
+  display: none;
 }
 
+.title-box {
+  text-align: left;
+  font-size: 52px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.titlesous-box {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  width: auto;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
 
 /* HEADER */
 
@@ -80,119 +125,127 @@ a {
 /* BOX1 Qu’est-ce qu’un Ordinateur Quantique ? */
 
 .box1 {
-    background: #ffffff;
-    height: auto;
-    width: 100%;
-    margin-top: 100px;
+  background: #ffffff;
+  height: auto;
+  width: 100%;
+  padding: 200px 0px 100px 0px;
 }
 
 .sousbox {
-    max-width: 1100px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .textmain {
-    text-align: center;
-    font-size: 56px;
-    font-weight: 600;
-    color: #1d1d1f;
-    animation: fade-in-hero 1.5s ease-out 0.7s 1 forwards;
-    transform: translateY(50px);
-    opacity: 0;
-    max-width: 1100px;
-    display: block;
-    margin-left: 30px;
-    margin-right: 30px;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 600;
+  color: #1d1d1f;
+  animation: fade-in-hero 1.5s ease-out 0.7s 1 forwards;
+  transform: translateY(50px);
+  opacity: 0;
+  max-width: 1100px;
+  display: block;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-#more {display: none;}
-#more1 {display: none;}
-#more2 {display: none;}
-#more3 {display: none;}
+#more {
+  display: none;
+}
+#more1 {
+  display: none;
+}
+#more2 {
+  display: none;
+}
+#more3 {
+  display: none;
+}
 
 .textsousmain {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-    color: #1d1d1f;
-    margin-top: 30px;
-    animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
-    transform: translateY(50px);
-    opacity: 0;
-    max-width: 900px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: #1d1d1f;
+  margin-top: 30px;
+  animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
+  transform: translateY(50px);
+  opacity: 0;
+  max-width: 900px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s;
 }
 
 .imgmain {
-    margin-top: 50px;
-    background-image: url("img/googlesycamore.jpeg");
-    max-width: 1100px;
-    height: 500px;
-    border-radius: 20px;
-    display: block;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
-    transform: translateY(50px);
-    opacity: 0;
-    margin-left: 30px;
-    margin-right: 30px;
+  margin-top: 50px;
+  background-image: url("img/googlesycamore.jpeg");
+  max-width: 1100px;
+  height: 500px;
+  border-radius: 20px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
+  transform: translateY(50px);
+  opacity: 0;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .text-description {
-    text-align: center;
-    font-size: 16px;
-    margin-top: 10px;
-    font-weight: 300;
-    color: #000000;
-    animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
-    transform: translateY(50px);
-    opacity: 0;
-    margin-left: 30px;
-    margin-right: 30px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 300;
+  color: #000000;
+  animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
+  transform: translateY(50px);
+  opacity: 0;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .moretext1 {
-    display: none;
+  display: none;
 }
 
-
 .button-more {
-    border-radius: 50px;
-    color: #ffffff;
-    background-color: #1d1d1f;
-    padding: 15px 10px;
-    width: 200px;
-    text-align: center;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    -webkit-transition: 0.1s ease-out;
-    -moz-transition: 0.1s ease-out;
-    transition: 0.1s ease-out;
-    animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
-    transform: translateY(50px);
-    opacity: 0;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #1d1d1f;
+  padding: 15px 10px;
+  width: 200px;
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  animation: fade-in-hero 1.5s ease-out 0.9s 1 forwards;
+  transform: translateY(50px);
+  opacity: 0;
 }
 
 .button-more:hover {
-    color: #ffffff;
-    background-color: rgb(43, 43, 43);
+  color: #ffffff;
+  background-color: rgb(43, 43, 43);
 }
 
 @keyframes fade-in-hero {
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* BOX1 Qu’est-ce qu’un Ordinateur Quantique ?*/
@@ -202,253 +255,130 @@ a {
 /* BOX2 Simulateur Quantique */
 
 .box2 {
-    background: #f5f5f7;
-    height: auto;
-    width: 100%;
-    padding: 100px 0px;
-    margin-top: 50px;
+  background: #f5f5f7;
+  height: auto;
+  width: 100%;
+  padding: 100px 0px;
+  margin-top: 50px;
 }
-
-.simutextmain {
-    text-align: left;
-    font-size: 60px;
-    font-weight: 500;
-    color: #f63e54;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.simutextsousmain {
-    text-align: left;
-    font-size: 20px;
-    font-weight: 500;
-    color: #1d1d1f;
-    max-width: 1100px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-
-
 
 .img-sim-atos {
-    margin-top: 10px;
-    background-image: url("img/atos-pc.png");
-    background-size: 60%;
-    background-position: center;
-    height: 500px;
-    margin-right: auto;
-    margin-left: auto;
-    background-repeat: no-repeat;
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 30px;
+  margin-top: 10px;
+  background-image: url("img/atos-pc.png");
+  background-size: 60%;
+  background-position: center;
+  height: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 30px;
 }
 
 .text-description-simu {
-    text-align: center;
-    font-size: 16px;
-    margin-top: -50px;
-    font-weight: 300;
-    color: #1d1d1f;
+  text-align: center;
+  font-size: 16px;
+  margin-top: -50px;
+  font-weight: 300;
+  color: #1d1d1f;
 }
 
 .textboxtitle {
-    text-align: left;
-    font-size: 25px;
-    font-weight: 500;
-    color: #f63e54;
-    display: block;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-top: 60px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+  color: #f63e54;
+  display: block;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 60px;
 }
 
 .mother-box {
-    /*All-Box*/
-    height: 400px;
-    max-width: 1100px;
-    margin-top: 50px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 30px;
+  /*All-Box*/
+  height: 400px;
+  max-width: 1100px;
+  margin-top: 50px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .children-box {
-     /*Atos*/
-     height: 400px;
-     width: 300px;
-     background: #ffffff;
-     border-radius: 20px;
-     position: relative;
-     display: flex;
-     flex-direction: column;
-     position: relative;
-     z-index: 0;
-     box-sizing: border-box;
-     overflow: hidden;
-   
-
+  /*Atos*/
+  height: 400px;
+  width: 300px;
+  background: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-
 
 .children-box2 {
-    /*Microsoft*/
-    height: 400px;
-    width: 300px;
-    background: #ffffff;
-    border-radius: 20px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 0;
-    box-sizing: border-box;
-    overflow: hidden;
+  /*Microsoft*/
+  height: 400px;
+  width: 300px;
+  background: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-
 .children-box3 {
-    /*IBM*/
-    height: 400px;
-    width: 300px;
-    background: #ffffff;
-    border-radius: 20px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 0;
-    box-sizing: border-box;
-    overflow: hidden;
+  /*IBM*/
+  height: 400px;
+  width: 300px;
+  background: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .text-name-simu {
-    color: #1d1d1f;
-    font-size: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 100px;
+  color: #1d1d1f;
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 100px;
 }
 .text-intro-simu {
-    color: #f63e54;
-    font-size: 22px;
-    font-weight: 500;
-    float: left;
-    margin-left: 30px;
-    margin-top: 30px;
+  color: #f63e54;
+  font-size: 22px;
+  font-weight: 500;
+  float: left;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
-[data-css-icon] i {
-    --animdur: 0.3s;
-    --loading-animdur: 0.8s;
-    --animtf: ease-in;
-    --bdw: 2px;
-    --bdrs: 50%;
-    --bgc: transparent;
-    --c: currentcolor;
-    --dots-bgc: silver;
-    --dots-size: 0.5rem;
-    --icon-size: 1rem;
-    --size: 2.5rem;
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: var(--bdrs);
-    box-sizing: border-box;
-    display: inline-flex;
-    height: var(--size);
-    justify-content: center;
-    position: relative;
-    transition: background-color var(--animdur) var(--animtf);
-    width: var(--size);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    fill: rgb(255, 255, 255);
-    background-color: rgba(134,134,139,.92);
-  }
-  [data-css-icon*="cross"] i::after,
-  [data-css-icon*="cross"] i::before {
-    --w: calc(var(--icon-size) * 1.4);
-    background: var(--c);
-    content: "";
-    height: var(--bdw);
-    position: absolute;
-    width: var(--w);
-  }
-  
-  [data-css-icon*="cross"] i::before,
-  [data-css-icon*="plus"] i::before {
-    transform: rotate(90deg);
-  }
 
-  /* STATE */
-  [open] > summary > [data-css-icon*="cross"] i::after {
-    transform: rotate(45deg);
-  }
-  [open] > summary > [data-css-icon*="cross"] i::before {
-    transform: rotate(135deg);
-  }
-  button,
-  summary {
-    background-color: var(--bgc);
-    border: 0;
-    border-radius: 5px;
-    color: #ffffff;
-    list-style-type: none;
-    outline: none;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-    padding-inline-end: 0.5rem;
-    padding-inline-start: 1rem;
-    user-select: none;
-  }
-
-
-
-
-.plus-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    fill: rgb(255, 255, 255);
-    background-color: rgba(134,134,139,.92);
-}
-
-.plus-icon:active {
-    transform: rotate(45deg);
-    -webkit-transition: 0.1s ease-out;
-    -moz-transition: 0.1s ease-out;
-    transition: 0.1s ease-out;
-}
-
-.plus-icon-box{
-    position: absolute;
-    right:    20px;
-    bottom:   20px;
-}
 
 .textchildren {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-    color: #ffffff;
-    max-width: 1100px;
-    display: none;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  max-width: 1100px;
+  display: none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
 }
 
 /* BOX2 Simulateur Quantique */
@@ -457,67 +387,57 @@ a {
 
 /* BOX3 Cryptographie Quantique */
 
-
 .box3 {
-    margin-top: 50px;
-    max-width: 1100px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 50px;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .box3sousbox {
-    border-radius: 30px;
-    height: auto;
-    padding: 70px 70px;
-    z-index: 9999;
-    margin-left: 30px;
-    margin-right: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("img/background-crypto.jpeg");
-}
-
-.cryptotextmain {
-    text-align: left;
-    font-size: 52px;
-    font-weight: 600;
-    color: #ffffff;
+  border-radius: 30px;
+  height: auto;
+  padding: 70px 70px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("img/background-crypto.jpeg");
 }
 
 .cryptotextsousmain {
-    text-align: left;
-    font-size: 20px;
-    font-weight: 400;
-    color: #ffffff;
-    width: auto;
-    margin-top: 30px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  width: auto;
+  margin-top: 30px;
 }
 
-
 .button-more-crypto {
-    border: 2px solid #ffffff;
-    border-radius: 50px;
-    width: 200px;
-    color: #ffffff;
-    background-color: transparent;
-    padding: 10px 20px;
-    text-align: center;
-    margin-top: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    -webkit-transition: 0.1s ease-out;
-    -moz-transition: 0.1s ease-out;
-    transition: 0.1s ease-out;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  width: 200px;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
 }
 
 .button-more-crypto:hover {
-    border: 2px solid #ffffff;
-    color: #000000;
-    background-color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
 }
 
 /* BOX3 Cryptographie Quantique */
@@ -527,40 +447,24 @@ a {
 /* BOX4 Internet Quantique*/
 
 .box4 {
-    margin-top: 50px;
-    max-width: 1100px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 50px;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .box4sousbox {
-    border-radius: 30px;
-    height: auto;
-    padding: 70px 70px;
-    z-index: 9999;
-    margin-left: 30px;
-    margin-right: 30px;
-    background: -webkit-linear-gradient(300deg, #359cd7 10%, #7d6efb 100%);
-    background: linear-gradient(150deg, #359cd7 10%, #7d6efb 100%);
+  border-radius: 30px;
+  height: auto;
+  padding: 70px 70px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background: -webkit-linear-gradient(300deg, #359cd7 10%, #7d6efb 100%);
+  background: linear-gradient(150deg, #359cd7 10%, #7d6efb 100%);
 }
 
-.internettextmain {
-    text-align: left;
-    font-size: 52px;
-    font-weight: 600;
-    color: #ffffff;
-}
-
-.intertextsousmain {
-    text-align: left;
-    font-size: 20px;
-    font-weight: 400;
-    color: #ffffff;
-    width: auto;
-    margin-top: 30px;
-}
 
 /* BOX4 Internet Quantique*/
 
@@ -569,70 +473,45 @@ a {
 /* BOX5 Algorithme*/
 
 .box5 {
-    margin-top: 50px;
-    max-width: 1100px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 50px;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .box5sousbox {
-    background: linear-gradient(-135deg, #c6368a 0%, #673dc2 100%);
-    border-radius: 30px;
-    height: auto;
-    padding: 70px 70px;
-    z-index: 9999;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.algotextmain {
-    text-align: left;
-    font-size: 52px;
-    font-weight: 600;
-    color: #ffffff;
-}
-
-.algosoustitlemain {
-    text-align: left;
-    font-size: 22px;
-    font-weight: 600;
-    color: #ffffff;
-    margin-top: 30px;
-}
-
-.algotextsousmain {
-    text-align: left;
-    font-size: 20px;
-    font-weight: 400;
-    color: #ffffff;
-    width: auto;
-    margin-top: 20px;
+  background: linear-gradient(-135deg, #c6368a 0%, #673dc2 100%);
+  border-radius: 30px;
+  height: auto;
+  padding: 70px 70px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .button-more-box {
-    border: 2px solid #ffffff;
-    border-radius: 50px;
-    width: 200px;
-    color: #ffffff;
-    background-color: transparent;
-    padding: 10px 20px;
-    text-align: center;
-    margin-top: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    -webkit-transition: 0.1s ease-out;
-    -moz-transition: 0.1s ease-out;
-    transition: 0.1s ease-out;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  width: 200px;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
 }
 
 .button-more-box:hover {
-    border: 2px solid #ffffff;
-    color: #000000;
-    background-color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
 }
 
 /* BOX5 Algorithme*/
@@ -642,63 +521,47 @@ a {
 /* BOX6 Quel sont les étapes pour installez myQLM ?*/
 
 .box6 {
-    margin-top: 50px;
-    max-width: 1100px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 50px;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .box6sousbox {
-    border-radius: 30px;
-    height: auto;
-    padding: 70px 70px;
-    z-index: 9999;
-    margin-left: 30px;
-    margin-right: 30px;
-    background-color: #1d1d1f;
+  border-radius: 30px;
+  height: auto;
+  padding: 70px 70px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #1d1d1f;
 }
 
-.devtextmain {
-    text-align: left;
-    font-size: 52px;
-    font-weight: 600;
-    color: #ffffff;
-    max-width: 1100px;
-}
 
-.devtextsousmain {
-    text-align: left;
-    font-size: 20px;
-    font-weight: 400;
-    color: #a1a1a6;
-    max-width: 1100px;
-    margin-top: 30px;
-}
 
 .highlight-title-step {
-    color: #ffffff;
-    margin-top: 20px;
-    font-size: 25px;
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 25px;
 }
 
 .highlight-title {
-    color: #ffffff;
-    margin-top: 20px;
+  color: #ffffff;
+  margin-top: 20px;
 }
 
 .highlight {
-    background: #eeffcc;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10px;
-    height: 50px;
-    max-width: 500px;
-    line-height: 50px;
-    border: 1px solid #a1a1a6;
-    margin-top: 20px;
+  background: #eeffcc;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  height: 50px;
+  max-width: 500px;
+  line-height: 50px;
+  border: 1px solid #a1a1a6;
+  margin-top: 20px;
 }
 
 /* BOX6 Quel sont les étapes pour installez myQLM ?*/
@@ -708,57 +571,52 @@ a {
 /* BOX7 Mise en pratique */
 
 .box7 {
-    margin-top: 50px;
-    max-width: 1100px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 50px;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .test-box {
-    background: #f5f5f5;
-    border-radius: 30px;
-    height: auto;
-    padding: 70px 70px;
-    z-index: 9999;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 100px;
-    margin-top: 30px;
-
-
+  background: #f5f5f5;
+  border-radius: 30px;
+  height: auto;
+  padding: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 100px;
+  margin-top: 30px;
 }
 
 .button-download {
-    color: #ffffff;
-    border-radius: 50px;
-    width: 370px;
-    height: 50px;
-    font-size: 15px;
-    cursor: pointer;
-    font-weight: 500;
-    background-color: #f63e54;
-    border: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 50px;
-    -webkit-transition: 0.1s ease-out;
-    -moz-transition: 0.1s ease-out;
-    transition: 0.1s ease-out;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 15px 80px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: #f63e54;
+  border: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
 }
 .button-download:hover {
-    background-color: #ff586b;
-
+  background-color: #ff586b;
 }
-.download-textsousmain{
-    text-align: left;
-    font-size: 20px;
-    font-weight: 400;
-    color: #000000;
-    width: auto;
-    margin-top: 20px;
+.download-textsousmain {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  width: auto;
+  margin-top: 20px;
 }
 
 /* BOX7 Mise en pratique */
@@ -768,16 +626,22 @@ a {
 /* FOOTER */
 
 .footer-box {
-    background-color: #f5f5f5;
-    bottom: 0;
-    height: 60px;
+  background-color: #f5f5f5;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
 }
 
 .footer-title {
-    color: #1d1d1f;
-    text-align: center;
-    line-height: 60px;
-    font-size: 15px;
+  color: #1d1d1f;
+  text-align: center;
+  line-height: 60px;
+  font-size: 15px;
+}
+
+.button-toportfolio {
+  color: #000;
+  text-decoration: underline;
 }
 
 /* FOOTER */
@@ -785,53 +649,64 @@ a {
 /*---------------------------------------*/
 
 @media only screen and (max-width: 737px) {
-    .button-header {
-        display: none;
-    }
-    .button-header-mobile {
-        background-color: #000000;
-        color: #ffffff;
-        font-size: 13px;
-        border-radius: 50px;
-        padding: 5px 5px;
-        width: 130px;
-        height: 20px;
-        text-align: center;
-        cursor: pointer;
-        float: right;
-        position: relative;
-        margin-top: 15px;
-        margin-right: 15px;
-        display: block;
-    }
-    .button-header-mobile:hover {
-        background-color: #424242;
-    }
-    .text-header {
-        margin-top: 17px;
-        font-size: 15px;
-    }
+  .button-header {
+    display: none;
+  }
+  .button-header-mobile {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 50px;
+    padding: 5px 5px;
+    width: 130px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    margin-top: 15px;
+    margin-right: 15px;
+    display: block;
+  }
+  .button-header-mobile:hover {
+    background-color: #424242;
+  }
+  .text-header {
+    margin-top: 17px;
+    font-size: 15px;
+  }
 
-    .textmain, .cryptotextmain, .simutextmain, .algotextmain, .algo2textmain, .devtextmain,  .intertextmain{
-        font-size: 45px;
-    }
-    .textsousmain, .cryptotextsousmain, .simutextsousmain, .devtextsousmain, .algo2textsousmain, .intertextsousmain, .algotextsousmain {
-        font-size: 18px;
-    }
+  .textmain,
+  .cryptotextmain,
+  .simutextmain,
+  .algotextmain,
+  .algo2textmain,
+  .devtextmain,
+  .intertextmain {
+    font-size: 45px;
+  }
+  .textsousmain,
+  .cryptotextsousmain,
+  .simutextsousmain,
+  .devtextsousmain,
+  .algo2textsousmain,
+  .intertextsousmain,
+  .algotextsousmain {
+    font-size: 18px;
+  }
 
-    .button-more-crypto {
-        margin-top: 100px;
-    }
+  .button-more-crypto {
+    margin-top: 100px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-
-.textboxtitle {
+  .textboxtitle {
     text-align: center;
     margin-top: 60px;
-}
+  }
 
-.mother-box {
+  .mother-box {
     /*All-Box*/
     height: auto;
     max-width: 1100px;
@@ -842,52 +717,41 @@ a {
     justify-content: space-between;
     margin-left: 30px;
     margin-right: 30px;
-}
+  }
 
-.children-box {
+  .children-box {
     width: auto;
     position: relative;
     margin-top: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
 
-}
-
-.children-box2 {
+  .children-box2 {
     width: auto;
     position: relative;
     margin-top: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-.children-box3 {
+  .children-box3 {
     width: auto;
     position: relative;
     margin-top: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
 }
 
- 
-}
 
+.black-text{
+    color: #000;
+ }
 
-
-
-  
-
-
-
-  
-
-
-  
-
-
-
-
-
+ .red-text{
+    color: #f63e54;
+ }

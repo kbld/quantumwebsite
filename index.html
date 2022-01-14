@@ -8,7 +8,6 @@
     <title>Informatique Quantique</title>
     <link type="text/css" rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/scrollreveal@4"></script>
-    <script src="https://kit.fontawesome.com/d97b87339f.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -17,27 +16,30 @@
 </head>
 
 <body>
+    <header>
 
-    <nav class="header-box">
-        <div class="nav-box">
-            <div class="text-header">
+
+
+
+
+    </header>
+    <div class="navbar">
+        <div class="box-navbar">
+            <a href="/"class="text-header">
                 Informatique Quantique
-            </div>
-            <a href="#mise-en-pratique" class="button-header">
-                Accéder au téléchargement
+                
             </a>
-            <a href="#mise-en-pratique" class="button-header-mobile">
-                Mise en pratique
-            </a>
+            <a href="#mise-en-pratique" class="button-header">Accéder au téléchargement</a>
         </div>
-    </nav>
+    </div>
+
 
 
     <section class="box1">
         <div class="sousbox">
-            <div class="textmain">
+            <h1 class="textmain">
                 Qu'est-ce qu'un<br>Ordinateur Quantique ?
-            </div>
+            </h1>
             <p class="textsousmain">
                 Un logiciel informatique par exemple Microsoft Excel fonctionne grâce à une
                 multitude de 1 et 0 c’est ce qu’on appelle des bits. Chaque bit est soit
@@ -76,10 +78,10 @@
     <section class="box2">
         <div class="sousbox">
             <div class="simumother-title">
-                <div class="simutextmain">
+                <h2 class="title-box red-text">
                     Simulateur Quantique
-                </div>
-                <p class="simutextsousmain">
+                </h2>
+                <p class="titlesous-box black-text">
                     Un simulateur quantique est une classe
                     restreinte d'ordinateur quantique que l’on peux exécuter sur des ordinateurs
                     classiques et ont pour principale but de simuler un environnement de
@@ -106,7 +108,7 @@
                     <div class="text-intro-simu">Atos</div>
                     <div class="text-name-simu">myQLM</div>
                     <div class="children-box-atos"></div>
-                   
+
                 </div>
                 <div class="children-box2" id="children-box2">
                     <p id="textchildren2" class="textchildren">
@@ -119,7 +121,7 @@
                     <div class="text-intro-simu">Microsoft</div>
                     <div class="text-name-simu">QDK</div>
                     <div class="children-box-microsoft"></div>
-               
+
                 </div>
                 <div class="children-box3" id="children-box3">
                     <p id="textchildren3" class="textchildren">
@@ -132,7 +134,7 @@
                     <div class="text-intro-simu">IBM</div>
                     <div class="text-name-simu">Qiskit</div>
                     <div class="children-box-ibm"></div>
-                  
+
                 </div>
             </div>
         </div>
@@ -140,15 +142,15 @@
 
 
 
- 
+
 
     <section class="box3">
         <div class="box3sousbox">
-            <div class="cryptotextmain">
+            <h2 class="title-box">
                 Cryptographie Quantique
-            </div>
+            </h2>
 
-            <p class="cryptotextsousmain">Définition de la cryptographie :
+            <p class="titlesous-box">Définition de la cryptographie :
                 La cryptographie permet de chiffrez/protéger des messages en
                 remplacent les caractères d’un message en plusieurs caractères
                 qui se compose de lettres, chiffres, et caractères spéciaux.Elle se
@@ -182,11 +184,11 @@
 
     <section class="box4">
         <div class="box4sousbox">
-            <div class="internettextmain">
+            <h2 class="title-box">
                 Internet quantique
-            </div>
+            </h2>
 
-            <p class="intertextsousmain">
+            <p class="titlesous-box">
                 L’internet quantique est un réseau informatique qui permettraient de
                 créer, stocker et déplacer facilement des données comme des informations
                 personnels, sans les problèmes d’un réseaux classiques (la lenteur, les erreurs
@@ -220,19 +222,19 @@
 
     <section class="box5">
         <div class="box5sousbox">
-            <div class="algotextmain">
+            <h2 class="title-box">
                 Algorithme
-            </div>
-            <p class="algotextsousmain">
+            </h2>
+            <p class="titlesous-box">
                 Principalement utilisé en informatique un algorithme c’est comme
                 une recette de cuisine c’est une suite d’opérations ou d’instructions
                 dans un ordre précis, permettant la création de
                 logiciels/programmes informatique et la résolution de problème.
             </p>
-            <div class="algosoustitlemain">
-                Algorithme de Shor
+            <div class="titlesous-box">
+                Algorithme de Shor :
             </div>
-            <p class="algotextsousmain">
+            <p class="titlesous-box">
                 L’algorithme de Shor à été découvert par Peter Shor en 1994 et cet
                 algorithme permet de transformer un très grand nombre en un produit.
                 C’est a dire qu’il faut récupérer deux facteur commun par exemple dans
@@ -240,31 +242,31 @@
                 donc A = 2xX + (6)=2x3 devient A= 2x(x+3).
 
                 <span id="dots3">...</span>
-                <div class="algotextsousmain" id="more3">
-                    Ce qui permet d’accélérer et faciliter les calculs pour un l’ordinateur.
-                    Par exemple L'algorithme de Shor a été utilisé en 2001 par IBM, qui factorisa
-                    15 en 3 et 5, en utilisant un calculateur quantique de 7 qubits.
-                    En 1994, Peter Shor a montré qu’avec un ordinateur quantique, on pourra
-                    factoriser des nombres qui auront des milliers voire des millions de chiffres.
-                    En utilisant la superposition quantique, Peter Shor montre comment faire réagir des états quantiques
-                    autour de la période ou le calcul trouve
-                    leur nombre commun, et ensuite utiliser ce résultat pour factoriser rapidement des calculs. Les
-                    meilleurs algorithmes à l’heure actuels pour factoriser un nombre de 600 chiffres ont besoin de
-                    millions de millions d’années pour factoriser un tel nombre. Alors qu’un ordinateur quantique
-                    pourrait effectuer cette opération en quelques minutes.
-            </p>
-            <div class="algosoustitlemain">
-                Algorithme de Grover
+            <div class="titlesous-box" id="more3">
+                Ce qui permet d’accélérer et faciliter les calculs pour un l’ordinateur.
+                Par exemple L'algorithme de Shor a été utilisé en 2001 par IBM, qui factorisa
+                15 en 3 et 5, en utilisant un calculateur quantique de 7 qubits.
+                En 1994, Peter Shor a montré qu’avec un ordinateur quantique, on pourra
+                factoriser des nombres qui auront des milliers voire des millions de chiffres.
+                En utilisant la superposition quantique, Peter Shor montre comment faire réagir des états quantiques
+                autour de la période ou le calcul trouve
+                leur nombre commun, et ensuite utiliser ce résultat pour factoriser rapidement des calculs. Les
+                meilleurs algorithmes à l’heure actuels pour factoriser un nombre de 600 chiffres ont besoin de
+                millions de millions d’années pour factoriser un tel nombre. Alors qu’un ordinateur quantique
+                pourrait effectuer cette opération en quelques minutes.
+                </p>
+                <div class="titlesous-box">
+                    Algorithme de Grover :
+                </div>
+                <p class="titlesous-box">
+                    L’Algorithme de Grover est un algorithme qui permet de résoudre des problèmes
+                    de recherche., il a été découvert en 1996 par Lov Grover, il permet de chercher
+                    un élément dans un très grand nombre d’éléments par exemple dans une base de données.
+                    Lorsque les bases de données deviennent très volumineuses, le temps gagné devient très
+                    appréciable du fait que toute la base de données est étudié par l’algorithme.
+                    L’algorithme de Grover est également utilisé en cryptographie.
+                </p>
             </div>
-            <p class="algotextsousmain">
-                L’Algorithme de Grover est un algorithme qui permet de résoudre des problèmes
-                de recherche., il a été découvert en 1996 par Lov Grover, il permet de chercher
-                un élément dans un très grand nombre d’éléments par exemple dans une base de données.
-                Lorsque les bases de données deviennent très volumineuses, le temps gagné devient très
-                appréciable du fait que toute la base de données est étudié par l’algorithme.
-                L’algorithme de Grover est également utilisé en cryptographie.
-            </p>
-        </div>
             <a onclick="myFunction3()" class="button-more-box" id="myBtn3">En savoir plus</a>
         </div>
     </section>
@@ -273,10 +275,10 @@
 
     <section class="box6">
         <div class="box6sousbox">
-            <div class="devtextmain">
+            <h2 class="title-box">
                 Quel sont les étapes pour installez le simulateur d'Atos myQLM ?
-            </div>
-            <div class="devtextsousmain">
+            </h2>
+            <div class="titlesous-box">
                 Pour commencer il faut avoir installer <span class="link-download">Python</span> (Python 3.6,
                 Python 3.7 ou Python 3.8
                 64-bit), la dernière version de <span class="link-download">Visual Studio</span> et la
@@ -303,27 +305,29 @@
 
     <section class="box7">
         <div class="simumother-title">
-            <div class="simutextmain">
-                Téléchargez le programme quantique
+            <div class="title-box red-text">
+                Téléchargement
             </div>
         </div>
         <div class="test-box">
             <div class="download-textsousmain">
-                Mon programme qui utilise le langage python et Tkinter pour son interface graphique 
-                sera un programme qui affichera le résultat d’une requête qui normalement s’affiche dans 
-                le terminal; mais qui s’affichera dans une fenêtre qui sera générer.
-                La requête de mon programme demandera au simulateur quantique d’Atos de 
-                m’afficher des quBits et ses probabilités. Cette requête s’exécutera 
-                à l’aide d’un bouton (Afficher le programme). Un second bouton sera 
+                Mon programme qui utilise le langage python et Tkinter pour son interface graphique
+                sera un programme qui affichera le résultat d’une requête qui normalement s’affiche dans
+                le terminal; mais qui s’affichera dans une fenêtre qui sera générée.
+                La requête de mon programme demandera au simulateur quantique d’Atos de
+                m’afficher des quBits et ses probabilités. Cette requête s’exécutera
+                à l’aide d’un bouton (Afficher le programme). Un second bouton sera
                 également présent il permettra de mettre fin au programme.
             </div>
-                <a href="https://kbld.github.io/quantumwebsite/qlmtest/" target="_self"><button class="button-download" type="button">Téléchargez le code du programme en .py</button></a>
+            <a href="https://kbld.github.io/quantumwebsite/qlmtest/" target="_self"><button class="button-download"
+                    type="button">Téléchargez</button></a>
         </div>
     </section>
 
     <footer>
         <div class="footer-box">
-            <div class="footer-title">© 2021 Killian Blanchard</div>
+            <div class="footer-title">© 2022 Killian Blanchard - <a class="button-toportfolio"
+                    href="https://killianbld.com">killianbld.com</a></div>
         </div>
     </footer>
 
